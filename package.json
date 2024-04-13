@@ -1,0 +1,15 @@
+{
+  "name": "visacardui",
+  "version": "1.0.0",
+  "description": "## This is a simple Visa Card UI",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass assets/sass/style.scss -o assets/css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

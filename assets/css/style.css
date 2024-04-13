@@ -5,6 +5,22 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh; }
+    html body #app .card {
+      background: linear-gradient(to right, #d53369, #cbad6d);
+      width: 27rem;
+      height: 15rem;
+      animation: card-ani 3s infinite; }
+      html body #app .card .card-chip {
+        width: 4rem;
+        height: 2.7rem; }
+      html body #app .card .card-number {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      html body #app .card .card-bottom {
+        transform: translateY(-2rem); }
+        html body #app .card .card-bottom .card-exp {
+          transform: translateX(-2rem); }
     html body #app form {
       width: 30rem; }
       html body #app form input {
@@ -13,5 +29,13 @@ html {
           outline: none; }
 
 @media only screen and (max-width: 576px) {
+  .card {
+    width: 17rem !important;
+    height: 10rem !important; }
+    .card .card-chip {
+      width: 3rem !important;
+      height: 2rem !important; }
+    .card h3 {
+      font-size: 1rem; }
   form {
     width: 20rem !important; } }

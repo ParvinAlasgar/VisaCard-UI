@@ -6,6 +6,27 @@ html {
     background-size: cover;
     height: 100vh;
     #app {
+      .card {
+        background: linear-gradient(to right, #d53369, #cbad6d);
+        width: 27rem;
+        height: 15rem;
+        animation: card-ani 3s infinite;
+        .card-chip {
+          width: 4rem;
+          height: 2.7rem;
+        }
+        .card-number {
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .card-bottom {
+          transform: translateY(-2rem);
+          .card-exp {
+            transform: translateX(-2rem);
+          }
+        }
+      }
       form {
         width: 30rem;
         input {
@@ -18,24 +39,19 @@ html {
     }
   }
 }
-
-// XX-Large devices (larger desktops, 1400px and down)
-@media only screen and (max-width: 1400px) {
-}
-// X-Large devices (large desktops, 1200px and down)
-@media only screen and (max-width: 1200px) {
-}
-
-// Large devices (desktops, 992px and down)
-@media only screen and (max-width: 992px) {
-}
-
-// Medium devices (tablets, 768px and down)
-@media only screen and (max-width: 768px) {
-}
-
 // Small devices  (tablets, 576px and down)
 @media only screen and (max-width: 576px) {
+  .card {
+    width: 17rem !important;
+    height: 10rem !important;
+    .card-chip {
+      width: 3rem !important;
+      height: 2rem !important;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
   form {
     width: 20rem !important;
   }

@@ -39,3 +39,11 @@ html {
       font-size: 1rem; }
   form {
     width: 20rem !important; } }
+
+@keyframes card-ani {
+  0% {
+    transform: translateY(2rem); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(2rem); } }

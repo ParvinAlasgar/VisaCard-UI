@@ -1,0 +1,46 @@
+html {
+  font-size: 1rem;
+  body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    #app {
+      form {
+        width: 30rem;
+        input {
+          width: 5.6rem;
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and down)
+@media only screen and (max-width: 1400px) {
+}
+// X-Large devices (large desktops, 1200px and down)
+@media only screen and (max-width: 1200px) {
+}
+
+// Large devices (desktops, 992px and down)
+@media only screen and (max-width: 992px) {
+}
+
+// Medium devices (tablets, 768px and down)
+@media only screen and (max-width: 768px) {
+}
+
+// Small devices  (tablets, 576px and down)
+@media only screen and (max-width: 576px) {
+  form {
+    width: 20rem !important;
+  }
+}
+
+// Extra Small devices (tablets, 320px and down)
+@media only screen and (max-width: 320px) {
+}

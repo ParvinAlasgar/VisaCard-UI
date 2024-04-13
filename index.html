@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Card UI</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./assets/libraries/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <section id="app" class="pt-5">
+      <div class="container">
+        <form class="check bg-white p-5 rounded-4 m-auto" action="">
+          <h6 class="fw-bold mb-3">Card Number</h6>
+          <div
+            class="check-number d-flex justify-content-around row-gap-3 flex-wrap"
+          >
+            <input
+              class="check-num border text-center py-2 rounded-3 text-secondary"
+              type="text"
+              maxlength="4"
+              placeholder="5647"
+              required
+            />
+            <input
+              class="check-num border text-center py-2 rounded-3 text-secondary"
+              type="text"
+              maxlength="4"
+              placeholder="7516"
+              required
+            />
+            <input
+              class="check-num border text-center py-2 rounded-3 text-secondary"
+              type="text"
+              maxlength="4"
+              placeholder="7164"
+              required
+            />
+            <input
+              class="check-num border text-center py-2 rounded-3 text-secondary"
+              type="text"
+              maxlength="4"
+              placeholder="0619"
+              required
+            />
+          </div>
+          <h6 class="fw-bold my-3">Card Holder</h6>
+          <input
+            class="check-holder w-100 border py-2 px-3 rounded-3 text-secondary"
+            type="text"
+            placeholder="Ted Med"
+            required
+          />
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="exp-date">
+              <h6 class="fw-bold my-3">Expiration date</h6>
+              <select
+                class="exp-month border p-2 bg-transparent text-center text-secondary rounded-3"
+                required
+              >
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select
+                class="exp-year border p-2 bg-transparent text-center text-secondary rounded-3"
+                required
+              >
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+                <option value="2031">2031</option>
+                <option value="2032">2032</option>
+                <option value="2033">2033</option>
+                <option value="2034">2034</option>
+                <option value="2035">2035</option>
+                <option value="2036">2036</option>
+                <option value="2037">2037</option>
+              </select>
+            </div>
+            <div class="ccv-number">
+              <h6 class="fw-bold my-3 text-center">CCV</h6>
+              <input
+                class="ccv-num border text-center p-2 rounded-3"
+                type="text"
+                placeholder="xxx"
+                required
+              />
+            </div>
+          </div>
+          <input
+            class="btn btn-success w-100 mt-3"
+            type="submit"
+            value="SUBMIT"
+          />
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

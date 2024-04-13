@@ -1,0 +1,17 @@
+html {
+  font-size: 1rem; }
+  html body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; }
+    html body #app form {
+      width: 30rem; }
+      html body #app form input {
+        width: 5.6rem; }
+        html body #app form input:focus {
+          outline: none; }
+
+@media only screen and (max-width: 576px) {
+  form {
+    width: 20rem !important; } }
